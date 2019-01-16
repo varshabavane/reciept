@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reciept</title>
+</head>
+<style>
+    /* .heading-container {
+        display: flex;
+        width: 100%;
+
+    } */
+
+    .heading1 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: left;
+    }
+
+    .heading2 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: left;
+    }
+
+    .heading3 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: left;
+    }
+
+
+
+
+    /* .flex-container {
+        display: flex;
+        width: 100%;
+
+    } */
+
+    .div1 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: right;
+    }
+
+    .div2 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: left;
+    }
+
+    .div3 {
+
+
+        width: 30%;
+        margin: 10px;
+        text-align: initial;
+        float: left;
+    }
+
+    @media screen and (max-width: 600px) {
+        .div1,
+        .div2,
+        .div3,
+        .heading1,
+        .heading2,
+        .heading3 {
+            width: 100%;
+            /* dispaly:column; */
+            /* flex-direction: column; */
+        }
+    }
+
+    table {
+        width: 100%;
+        /* margin-right: 30px; */
+        /* padding:30px; */
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid rgb(170, 170, 170);
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <div class="">
+
+        <center>
+            <b>
+                <h4>
+                    <u>KIDSBASTA.COM</u>
+                </h4>
+            </b>
+        </center>
+    </div>
+    <!-- header -->
+    <div class="heading-container" style="width:100%;">
+        <div class="heading1">
+            <b>order ID:</b>OD12343
+            <p>OrderDate:22:12:2018 11:30am</p>
+        </div>
+        <div class="heading2">
+            <b>invoice No:</b>FA FA D824221231
+            <p>invoice Date:22:12:2018 11:40am</p>
+        </div>
+        <div class="heading3">
+            <p>GSTIN : 29AEWPq4343</p>
+        </div>
+
+    </div>
+    <!--addresses  -->
+    <div class="flex-container">
+        <div class="div1">
+
+            <b>sold By</b>
+            <p> kidsbasta.com
+                <br> maharashtra 400-00021</p>
+        </div>
+        <div class="div2">
+            <b>shipping Address</b>
+            <p>saidham apart,mohane road,kalyan
+                <br> maharashtra.
+        </div>
+
+        <div class="div3">
+            <p>
+                <b>Billing Address</b>
+                <p>saidham apart,mohane road,kalyan
+                    <br> maharashtra.
+                </p>
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- table -->
+    <table>
+
+        <table>
+            <tr>
+                <th>product</th>
+                <th>description</th>
+                <th>quantity</th>
+                <th>Gross Amount</th>
+                <th>Discount</th>
+                <th>Taxable value</th>
+                <th>IGST</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>history book</td>
+                <td>history| HSN:231312 | IGST 25%</td>
+                <td>1</td>
+                <td>1100</td>
+                <td>-0.00</td>
+                <td>932.20</td>
+                <td>167.80</td>
+                <td>1100.00</td>
+
+            </tr>
+            <tr>
+
+                <td colspan="2">
+                    <b>shipping charge</b>
+                </td>
+                <td>1</td>
+                <td>50</td>
+                <td>0</td>
+                <td>30.20</td>
+                <td>20.80</td>
+                <td>50.00</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <b>Total Qty:1</b>
+                </td>
+                <td>
+                    <b>Total price:</b>
+                </td>
+                <td>
+                    <b>1150:00</b>
+                    <p>All Values are in INR</p>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="container">
+            <p>Seller Registered Address:kidsBasta</p>
+            <b>sold By</b>
+            kidsbasta.com
+            <br> maharashtra 400-00021</p>
+            <p>
+                <b>Declaration</b>
+            </p>
+            <p>The good sold are intended for end user consumption and not for resale</p>
+
+        </div>
+        <div class="container">
+
+            <p style="border:1px solid black; padding:50px 50px 50px 50px; float:right;" placeholder="">signature</p>
+            <!-- <p style="float:right">signature</p> -->
+            </p>
+        </div>
+
+</body>
+
+</html>
