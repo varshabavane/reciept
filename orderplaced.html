@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reciept</title>
+</head>
+<style>
+    body {
+        /* margin-left: 350px; */
+        /* margin-right: 350px; */
+    }
+
+    hr {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .header {
+        background-color: turquoise;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+
+    @media screen and(max-width:600px) {
+        .header {
+            width: 100%;
+        }
+    }
+
+
+    .order {
+        width: 100%;
+    }
+
+    .order_info {
+        margin: 30px;
+    }
+
+    @media screen and(max-width:600) {
+        .order_info {
+            width: 100%;
+        }
+    }
+
+    /* billinfo */
+
+    .bill {
+        margin-left: 30px;
+    }
+
+    .bill_info {
+
+
+        width: 50%;
+        text-align: initial;
+        float: left;
+
+    }
+
+    .ship_info {
+
+
+        width: 50%;
+        text-align: initial;
+        float: right;
+    }
+
+    @media screen and (max-width: 600px) {
+        .bill_info,
+        .ship_info {
+            width: 100%;
+
+        }
+
+    }
+
+    /* billinfo end */
+
+    /* orderDetails */
+
+    .orderDetails {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .orderDet {
+        margin-left: 30px;
+    }
+
+    .note {
+        margin-left: 30px;
+
+    }
+</style>
+
+<body>
+    <!-- <div class="reciept"> -->
+    <!-- header -->
+    <div class="header">
+        <h2>KidsBasta.com</h2>
+        <h3>Your order has been Placed</h3>
+        <h3>Order #54343</h3>
+    </div>
+    <!-- </div> -->
+    <!-- order info -->
+    <div class="order_info" id="order_info">
+        <h3>Order Information</h3>
+        <p>Order #:131</p>
+        <p>Order Placed:jan 13</p>
+        <p>Total cost:$50.00</p>
+        <p>Payment status : Not Paid</p>
+        <p>Payment method : Offline</p>
+    </div>
+    <hr>
+
+    <!-- billing Info -->
+    <div class="bill">
+        <div class="bill_info">
+
+            <h3>Billing Information</h3>
+            <p>Royal Bldng,
+                <br>2422 Alexander Avenue,
+                <br>Toronto,canada MSN
+                <br> 2R
+                <br>9454311</p>
+            <a href="">vb13196@gmail.com</a>
+
+        </div>
+
+        <div class="ship_info">
+            <h3>Shipping Information</h3>
+            <p>Royal Bldng,
+                <br>2422 Alexander Avenue,
+                <br>Toronto,canada MSN
+                <br> 2R
+                <br>9454311</p>
+            <b>Delivery Method:Free Shipping</b>
+        </div>
+    </div>
+    <hr>
+    <!-- bill info end -->
+    <!-- orderDetails -->
+    <div class="orderDet">
+        <h3>Order Details</h3>
+    </div>
+    <div class="orderDetails">
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    <b>Item</b>
+                </td>
+                <td>
+                    <b>Qty</b>
+                </td>
+                <td>
+                    <b>Total</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Geometry Book</td>
+                <td>1</td>
+                <td>$ 50.00</td>
+            </tr>
+            <tr>
+                <td>Price:$ 50.00</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="note">
+
+        <p>
+            <b>Note From Buyer:</b> Please Don't post reciept on box. It's a gift.</p>
+    </div>
+    <hr>
+    <div>
+        <table style="float:right; width:50%;">
+            <tr>
+                <td>Subtotal</td>
+                <td>$45.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>$0.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$4.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Total</b>
+                </td>
+                <td>
+                    <b>$49.50</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
